@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#C8E6E2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".JPBeautyMainActivity" >
+    <LinearLayout
+        android:id="@+id/lineTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0px"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+       
+    </LinearLayout>
+	<LinearLayout 
+	            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:gravity="bottom"
+	    android:layout_alignBottom="@id/lineTop">
+	     <Button
+            android:id="@+id/btnSetDesktop"
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_settings" >
+        </Button>
+	</LinearLayout>
+    <LinearLayout
+        android:id="@+id/linebottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineTop"
+        android:layout_margin="0px"
+        android:background="#7bbfea" >
+
+        <HorizontalScrollView
+            android:id="@+id/gallery1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+   <LinearLayout
+        android:id="@+id/lineAD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/linebottom"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="#B0E0E6"
+        android:orientation="vertical"
+        android:gravity="bottom" >
+
+    </LinearLayout>
+
+</RelativeLayout>
